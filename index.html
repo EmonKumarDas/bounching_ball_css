@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            background-color: black;
+        }
+        .line{
+            border-bottom: 10px solid rgb(248, 0, 207);
+            position: relative;
+            top: 49vh;
+            left: 30vw;
+            width: 50%;
+        }
+        .ball{
+            width: 5%;
+            height: 30px;
+            background-color: red;
+            position: relative;
+            top: 49vh;
+            left: 30vw;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+        .ball:nth-child(1){
+            animation: bounces 4s alternate;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+        } 
+        .ball:nth-child(2){
+            animation: bounces 4.2s alternate;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+        } 
+        .ball:nth-child(3){
+            animation: bounces 4.4s alternate;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+        } 
+        .ball:nth-child(4){
+            animation: bounces 4.6s alternate;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+        } 
+        .ball:nth-child(5){
+            animation: bounces 4.8s alternate;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+        } 
+        .ball:nth-child(6){
+            animation: bounces 5s alternate;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+        } 
+        .ball:nth-child(7){
+            animation: bounces 5.2s alternate;
+            animation-iteration-count: infinite;
+            
+        }   
+        .container{
+            display: flex;
+        }
+        @keyframes bounces{
+            0%{
+               bottom: 0;
+                background-color: rgba(0, 255, 85, 0.39);
+        }
+        100%{
+            top: 50px;
+            background-color: blue;
+        }
+       
+    }
+    </style>
+</head>
+<body>
+    <div class="container"> <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    </div>
+       
+        <div class="line"></div>
+</body>
+</html>
